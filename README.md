@@ -3,7 +3,7 @@
 **Aluno(s):** Pietro Gonzaga, Gabriel Tavares, Wendel Ramalho
 **Turma:** Banco de Dados 2026
 **Data:** 19/08/2026
-**Repositório Git:** https://github.com/usuario/atividade-bd
+**Repositório Git:**
 
 ## Resumo Executivo
 
