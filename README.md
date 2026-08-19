@@ -1,13 +1,13 @@
 # Atividade Teórica: Regra de Negócio no BD versus na Aplicação
 
-**Aluno(s):** Pietro Gonzaga, , Nome3
+**Aluno(s):** Pietro Gonzaga, Gabriel Tavares, Wendel Ramalho
 **Turma:** Banco de Dados 2026
-**Data:** ../../2026
+**Data:** 18/08/2026
 **Repositório Git:** https://github.com/usuario/atividade-bd
 
 ## Resumo Executivo
 
-Breve descrição do tema e da posição adotada pelo grupo.
+A regra de negócio define como um sistema deve funcionar e pode ser implementada tanto no Banco de Dados quanto na Aplicação. O grupo usará o material disponibilizado pelo professor e também usará inteligência artificial, caso necessário.
 
 ## 1. Desenvolvimento Teórico
 
@@ -52,14 +52,14 @@ Seus tipos de regras de negócios incluem:
 
 ### 1.3 Regras na aplicação
 1. Validação de entradas: Verificam se os dados fornecidos são válidos antes de serem utilizados.
-   - vantagem: Impede que dados incorretos cheguem ao banco, permite apresentar mensagem de erro ao usuário e ajuda na prevenção de dados maliciosos.
+   - vantagem: Impede que dados incorretos cheguem ao banco, permite apresentar mensagem de erro ao usuário e ajuda na                       prevenção de dados maliciosos.
    - limitação: A validação na aplicação não substitui as restrições do banco de dados.
 2. Camadas de serviço: Fica entre a interface da aplicação e o acesso aos dados.
    - vantagens: Centraliza as regras de negócios, facilita testes e manutenção e separa responsabilidades.
    - limitações: Aumenta a complexidade do projeto e adiciona uma camada à arquitetura.
 3. Frameworks: Fornece estruturas e ferramentas prontas para facilitar o desenvolvimento da aplicação.
    - vantagens: Acelera o desenvolvimento, ajuda a padronizar a estrutura do sistema e fornece soluções já testada para problemas comuns.
-   - limitações: Pode haver dependência de uma tecnologia específica, atualizações podem exigir alterações no sistema e o dev precisa entender como o framework                      funciona.
+   - limitações: Pode haver dependência de uma tecnologia específica, atualizações podem exigir alterações no sistema e o dev                  precisa entender como o framework funciona.
 
 ### 1.4 Comparativo BD x Aplicação
 1. Banco de Dados
