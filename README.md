@@ -1,6 +1,6 @@
 # Atividade Teórica: Regra de Negócio no BD versus na Aplicação
 
-**Aluno(s):** Nome1, Nome2, Nome3
+**Aluno(s):** Pietro Gonzaga, , Nome3
 **Turma:** Banco de Dados 2026
 **Data:** ../../2026
 **Repositório Git:** https://github.com/usuario/atividade-bd
@@ -51,26 +51,61 @@ Seus tipos de regras de negócios incluem:
 
 
 ### 1.3 Regras na aplicação
-Validação de entradas, camadas de serviço, frameworks — vantagens e limitações.
+1. Validação de entradas: Verificam se os dados fornecidos são válidos antes de serem utilizados.
+   - vantagem: Impede que dados incorretos cheguem ao banco, permite apresentar mensagem de erro ao usuário e ajuda na prevenção de dados maliciosos.
+   - limitação: A validação na aplicação não substitui as restrições do banco de dados.
+2. Camadas de serviço: Fica entre a interface da aplicação e o acesso aos dados.
+   - vantagens: Centraliza as regras de negócios, facilita testes e manutenção e separa responsabilidades.
+   - limitações: Aumenta a complexidade do projeto e adiciona uma camada à arquitetura.
+3. Frameworks: Fornece estruturas e ferramentas prontas para facilitar o desenvolvimento da aplicação.
+   - vantagens: Acelera o desenvolvimento, ajuda a padronizar a estrutura do sistema e fornece soluções já testada para problemas comuns.
+   - limitações: Pode haver dependência de uma tecnologia específica, atualizações podem exigir alterações no sistema e o dev precisa entender como o framework                      funciona.
 
 ### 1.4 Comparativo BD x Aplicação
-Tabela comparativa: consistência, segurança, performance, manutenção,
-portabilidade, controle central da regra.
+1. Banco de Dados
+   - consistência: Mais forte;
+   - segurança: Proteção dos dados;
+   - performance: Boa para integridade dos dados;
+   - manutenção: Centralizada, mas pode ser complexa;
+   - portabilidade: Pode depender do SGBD;
+   - controle central da regra: Muito alto.
+2. Aplicação
+   - consistência: Depende da implementação;
+   - segurança: Controle de acesso e usuários
+   - performance: Boa para processamentos e validações
+   - manutenção: Geralmente mais flexível
+   - portabilidade: Geralmente maior
+   - controle central: Depende da arquitetura
 
 ### 1.5 Análise crítica: qual a melhor opção?
-Posição fundamentada do grupo e condições em que cada abordagem se aplica.
+O Banco de Dados é mais indicado para regras que precisam garantir integridade e consistência de dados.
+A Aplicação é mais adequada para regras de negócio, validação complexa e lógica de processamento.
+O ideal é o uso de forma híbrida: uma parte com o Banco de Dados, a outra, Aplicação.
 
 ## 2. Exemplos e Casos
+1. Regra no Banco de Dados
+   
+Uma loja possui essas regras:
+- O preço do produto deve ser maior que zero.
+- A quantidade vendida deve ser maior que zero.
+- Um pedido só pode existir para um cliente cadastrado.
+- Um item do pedido só pode fazer referência a um produto existente.
+- O e-mail do cliente não pode ser duplicado.
 
-Exemplo em PostgreSQL (regra no BD) e exemplo de validação na aplicação
-(pseudocódigo ou código). Um caso real: sistema de vendas, clínica ou biblioteca.
+Digamos que alguém tente cadastrar o valor "-500", o Postgre vai negar, pois o preço deve ser maior que zero.
+Da mesma forma, caso alguém tente criar um pedido para um cliente inexistente, pois a FK exige que o cliente exista.
+
+2. Regra na Aplicação
+
+Agora, digamos que um cliente só possa efetuar um pedido, caso o valor total da compra passe de R$ 20,00.
+Nesse caso, a Aplicação vai verificar se a solicitação faz sentido para o negócio e o BD garante que os dados armazenados respeitem as regras de identidade.
 
 ## 3. Referências
 
-Fontes consultadas (livros, artigos, documentação oficial do PostgreSQL, materiais do curso).
+Fontes consultadas: Material do curso (Int. a Banco de Dados) e ChatGPT. 
 
 ## 4. Conclusões
 
-Aprendizados, reflexões e principais pontos observados pelo grupo.
+Uma boa solução é dividir as tarefas. Vimos que o BD é recomendável para certas coisas e a Aplicação para outras. Isso, também, serve não apenas para o mundo de Banco de Dados, mas para toda a programação e as profissões, vida acadêmica e social no geral. Um modo de agir, pensar ou executar nem sempre vai ser a única solução para certo problema. Por isso, o ideal é combinar soluções diferentes, como vimos nesse trabalho.
 
 ## Link do Repositório Git
