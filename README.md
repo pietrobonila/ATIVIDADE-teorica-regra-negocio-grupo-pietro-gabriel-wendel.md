@@ -3,7 +3,7 @@
 **Aluno(s):** Pietro Gonzaga, Gabriel Tavares, Wendel Ramalho
 **Turma:** Banco de Dados 2026
 **Data:** 19/08/2026
-**Repositório Git:**
+**Repositório Git:** https://github.com/pietrobonila/ATIVIDADE-teorica-regra-negocio-grupo-pietro-gabriel-wendel.md.git
 
 ## Resumo Executivo
 
