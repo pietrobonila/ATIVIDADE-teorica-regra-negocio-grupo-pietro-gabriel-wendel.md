@@ -109,3 +109,5 @@ Fontes consultadas: Material do curso (Int. a Banco de Dados) e ChatGPT.
 Uma boa solução é dividir as tarefas. Vimos que o BD é recomendável para certas coisas e a Aplicação para outras. Isso, também, serve não apenas para o mundo de Banco de Dados, mas para toda a programação e as profissões, vida acadêmica e social no geral. Um modo de agir, pensar ou executar nem sempre vai ser a única solução para certo problema. Por isso, o ideal é combinar soluções diferentes, como vimos nesse trabalho.
 
 ## Link do Repositório Git
+
+https://github.com/pietrobonila/ATIVIDADE-teorica-regra-negocio-grupo-pietro-gabriel-wendel.md.git
